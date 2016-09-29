@@ -1,3 +1,6 @@
+# Author: Aditya Inapurapu 
+# Site: http://www.iaditya.com
+
 import weather
 import mailer
 

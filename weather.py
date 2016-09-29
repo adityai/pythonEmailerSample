@@ -1,3 +1,26 @@
+# Author: Aditya Inapurapu 
+# Site: http://www.iaditya.com
+
+import weather
+import mailer
+
+def get_emails():
+    # Get list of all emails
+    emails = {}
+
+    try:
+        email_file = open('emails.txt', 'r')
+
+        for line in email_file:
+            (email, name) = line.split(',')
+            emails[email] = name.strip()
+            
+    except FileNotFoundError as err:
+        print(err)
+    return emails
+
+def get_schedule():
+    # Get the schedule
 import requests
 
 def get_weather_forecast():
